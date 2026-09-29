@@ -29,3 +29,6 @@ def konversi_suhu(suhu, satuan):
         return (suhu - 32) * 5/9
     else:
         return "Satuan tidak valid"
+
+# Task 2: Lambda untuk luas lingkaran
+luas_lingkaran = lambda r: math.pi * r ** 2
