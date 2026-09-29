@@ -31,22 +31,11 @@ def konversi_suhu(suhu, satuan):
         return "Satuan tidak valid"
 
 # Task 2: Lambda untuk luas lingkaran
-luas_lingkaran = lambda r: math.pi * r ** 2
+import math
+luas_lingkaran = lambda r: 3.14 * r ** 2
 
-# Program utama
-print("=== TASK 1: KONVERSI SUHU ===")
+print("======== LUAS LINGKARAN ========")
 
-suhu = float(input("Masukkan suhu: "))
-satuan = input("Masukkan satuan (C/F): ")
-
-hasil_suhu = konversi_suhu(suhu, satuan)
-
-print("Hasil konversi:", hasil_suhu)
-
-print("\n=== TASK 2: LUAS LINGKARAN ===")
-
-r = float(input("Masukkan jari-jari lingkaran: "))
-
-hasil_luas = luas_lingkaran(r)
-
-print("Luas lingkaran:", hasil_luas)
+jari_jari = float(input("Masukkan jari-jari lingkaran: "))
+luas = luas_lingkaran(jari_jari)
+print(f"Luas lingkaran dengan jari-jari {jari_jari} = {luas:.2f}")
