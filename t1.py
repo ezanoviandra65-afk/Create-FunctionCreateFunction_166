@@ -32,3 +32,14 @@ def konversi_suhu(suhu, satuan):
 
 # Task 2: Lambda untuk luas lingkaran
 luas_lingkaran = lambda r: math.pi * r ** 2
+
+# Program utama
+print("=== TASK 1: KONVERSI SUHU ===")
+
+suhu = float(input("Masukkan suhu: "))
+satuan = input("Masukkan satuan (C/F): ")
+
+hasil_suhu = konversi_suhu(suhu, satuan)
+
+print("Hasil konversi:", hasil_suhu)
+
